@@ -1,7 +1,7 @@
 baseURL = "https://batocera-pc-setup.pages.dev/"
 languageCode = "en-us"
 title = "Batocera PC Setup"
-enableRobotsTXT = true
+enableRobotsTXT = false
 disableKinds = ["taxonomy", "term"]
 [params]
 source = "batocera-pc-setup"
