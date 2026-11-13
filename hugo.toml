@@ -1,13 +1,33 @@
 baseURL = "https://batocera-pc-setup.pages.dev/"
 languageCode = "en-us"
-title = "Batocera x86 PC Setup"
+title = "Batocera PC Setup"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 [params]
-template_version = "v1.1.0"
-description = "Install Batocera on an x86 PC or mini PC and verify USB boot, controller, audio, and one game."
-category = "Gaming"
 source = "batocera-pc-setup"
+description = "Remote Batocera help for x86 PCs: USB boot, firmware mode, controller detection, audio, and one game test."
 email = "hello@handytasklab.com"
+fallback_email_subject = "Batocera x86 PC setup help"
+fallback_email_fields = ["PC or mini PC model", "Firmware mode and USB entry", "Controller model", "Game and emulator tested"]
+og_image = "images/social.jpg"
+footer_line = "Remote help for one device at a time."
+latest_kicker = "FROM THE BLOG"
+latest_title = "Batocera PC Setup Guides"
+theme_bg = "#20263D"
+theme_surface = "#EFF0F1"
+theme_card = "#FFFFFF"
+theme_ink = "#182018"
+theme_muted = "#5D655F"
+theme_accent = "#FFB96A"
+theme_accent_ink = "#151515"
+theme_deep = "#191E30"
+theme_deep_ink = "#FFFFFF"
+theme_header_ink = "#FFFFFF"
+theme_line = "#CDCFCE"
+theme_link = "#FFC17C"
+theme_scrim = "rgba(8,12,16,0.86)"
+theme_light = false
+hero_desktop_hd_width = 1376
+hero_mobile_hd_width = 768
 [markup.goldmark.renderer]
 unsafe = true
