@@ -2,7 +2,9 @@ baseURL = "https://batocera-pc-setup.pages.dev/"
 languageCode = "en-us"
 title = "Batocera x86 PC Setup"
 enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
 [params]
+template_version = "v1.1.0"
 description = "Install Batocera on an x86 PC or mini PC and verify USB boot, controller, audio, and one game."
 category = "Gaming"
 source = "batocera-pc-setup"
