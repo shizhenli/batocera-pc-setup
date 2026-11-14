@@ -14,6 +14,8 @@ categories:
 category_slug: game-console-boot
 ---
 
+**batocera usb not booting**. 
+
 <p>A Batocera boot failure is usually in the boot chain, not inside Batocera. Work from the image outward so you can tell whether the PC ever reached the bootloader.</p>
 <h2>Before you start</h2><ul>
 <li>The exact PC or mini PC model and firmware version</li>
@@ -24,21 +26,21 @@ category_slug: game-console-boot
 <h2>Step-by-step checks</h2>
 <h3>Step 1: Confirm the download and checksum</h3>
 <p>Download the x86_64 image from the Batocera release page and compare its published checksum. A truncated download can look like a bad USB even when the writer reports success.</p>
-<p><strong>Check:</strong> The checksum matches exactly before you write anything.</p>
+<p>Check: The checksum matches exactly before you write anything.</p>
 <h3>Step 2: Rewrite the drive, do not copy the ISO</h3>
 <p>Use balenaEtcher or Raspberry Pi Imager to write the image block by block. In Windows Disk Management, confirm the USB is the disk you are erasing, then let the writer finish and verify its final validation step.</p>
-<p><strong>Check:</strong> The writer reports a completed write and validation without errors.</p>
+<p>Check: The writer reports a completed write and validation without errors.</p>
 <h3>Step 3: Choose the matching firmware mode</h3>
 <p>Open the one-time boot menu and note whether the USB entry is UEFI or legacy. Test UEFI first on a modern PC. If it is ignored, disable Secure Boot and Fast Boot, then retry; only test legacy/CSM when the hardware supports it.</p>
-<p><strong>Check:</strong> The Batocera splash or EmulationStation appears instead of Windows.</p>
+<p>Check: The Batocera splash or EmulationStation appears instead of Windows.</p>
 <h3>Step 4: Test the controller before a game</h3>
 <p>With one controller connected, open Controller Settings and map the d-pad, face buttons, start, and hotkey. Save the mapping, then restart the front end and confirm it persists.</p>
-<p><strong>Check:</strong> The same controller still navigates after a reboot.</p>
+<p>Check: The same controller still navigates after a reboot.</p>
 <h3>Step 5: Launch one game and verify output</h3>
 <p>Start one known-good game, leave it running for two minutes, and check image, sound, and exit. If it fails, record the emulator and the last on-screen message before changing another setting.</p>
-<p><strong>Check:</strong> The game starts, plays with sound, and returns to EmulationStation cleanly.</p>
+<p>Check: The game starts, plays with sound, and returns to EmulationStation cleanly.</p>
 <h2>Verify the result</h2>
 <p>Repeat the boot with the network disconnected and the same controller attached. The PC should reach EmulationStation, recognize the controller, and launch the test game without a second firmware change.</p>
 <h2>Rollback</h2>
 <p>Restore the original boot order and Secure Boot/Fast Boot settings after testing. Keep the Batocera drive separate so the internal Windows installation is untouched.</p>
-<p><a href="/#consult">Ask for help with this exact symptom</a> · <a href="/guides/">All troubleshooting guides</a></p>
+<p><a href="/#consult">Ask for help with this exact symptom</a> · All troubleshooting guides</p>
